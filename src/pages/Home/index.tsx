@@ -2,6 +2,7 @@ import './styles.css'
 import Logo from '../../assets/logo.png'
 
 import NewNoteCard from '../../components/NewNoteCard'
+import NoteCard from '../../components/NoteCard'
 
 export default function Home() {
   return (
@@ -19,6 +20,9 @@ export default function Home() {
 
       <div className='cards'>
         <NewNoteCard />
+
+        <NoteCard />
+        <NoteCard />
       </div>
     </div>
   )

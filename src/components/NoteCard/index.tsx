@@ -3,14 +3,16 @@ import { X } from 'lucide-react'
 
 import './styles.css'
 
-export default function NewNoteCard() {
+export default function NoteCard() {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className='new-note-card'>
+    <div className='note-card'>
       <button onClick={() => setOpen(true)}>
-        <span>Adicionar nota</span>
-        <p>Crie uma nota para um lembrete, lista de compras, tarefas e muito mais</p>
+        <span>há menos de um minuto</span>
+        <p>Texto que o Natan criou de exemplo para aparecer na nota</p>
+
+        <div className='gradient-overlay' />
       </button>
 
       {
@@ -33,12 +35,15 @@ export default function NewNoteCard() {
 
               <form>
                 <div>
-                  <span>Adicionar nota</span>
+                  <span>há menos de um minuto</span>
 
-                  <textarea autoFocus></textarea>
+                  <p>Texto que o Natan criou de exemplo para aparecer na nota</p>
+
                 </div>
 
-                <button>Salvar essa nota</button>
+                <button>
+                  Deseja <span>apagar essa nota?</span>
+                </button>
               </form>
             </div>
           </div>
@@ -47,4 +52,3 @@ export default function NewNoteCard() {
     </div>
   )
 }
-
